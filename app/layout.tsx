@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   card: "summary_large_image",
   title: "EKM — Software Engineer Portfolio",
   description: "Explore projects, skills, and experience of EKM, a frontend developer.",
-  images: ["/og-image.jpg"],
+  // images: ["/og-image.jpg"],
 },
 
 robots:{
@@ -78,10 +78,10 @@ robots:{
   }
 },
 
-icons:{
-  icon:"/favicon.ico",
-  apple:"/apple-touch.png"
-},
+// icons:{
+//   icon:"/favicon.ico",
+//   apple:"/apple-icon.png"
+// },
 
 alternates:{
   canonical:"/"
