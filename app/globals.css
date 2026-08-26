@@ -15,6 +15,7 @@ color (h)-rep color shade 0-360
   /* Layout Colors */
   --color-background: oklch(0.145 0 0);
   --color-foreground: oklch(0.985 0 0);
+  --color-muted2: #ececf0;
   
   
   /* Component Containers */
@@ -41,6 +42,7 @@ color (h)-rep color shade 0-360
   --color-border: oklch(0.269 0 0);
   --color-input: oklch(0.269 0 0);
   --color-ring: oklch(0.439 0 0);
+  --color-border2: rgba(0, 0, 0, 0.1);
   
   /* Typography Scale */
   --font-weight-medium: 500;

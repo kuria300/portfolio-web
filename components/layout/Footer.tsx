@@ -28,7 +28,7 @@ export default function Footer (){
                  <FaLinkedin size={16}/>
                 </Link>
 
-                 <Link href='malito:eugenekuria66@gmail.com' >
+                 <Link href='mailto:eugenekuria66@gmail.com' >
                  <Mail size={16}/>
                 </Link>
               </div>

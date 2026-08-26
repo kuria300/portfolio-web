@@ -1,3 +1,4 @@
+import FillButtonLink from "@/components/ui/FillButtonLink";
 import { ArrowRight, Download, Mail, TerminalIcon } from "lucide-react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
@@ -19,27 +20,20 @@ const SKILLS = [
   { label: "Redis", cat: "database" },
 ];
 export default function About (){
-    const TIMELINE = [
+   const TIMELINE = [
   {
-    year: "2024 – present",
-    role: "Senior Full-Stack Engineer",
+    year: "2025 – present",
+    role: "Full-Stack Engineer",
     company: "Freelance / Contract",
     description:
-      "Designing and shipping full-stack products for clients across fintech, e-commerce, and SaaS. Specialising in Node.js APIs and React frontends.",
+      "Designing and shipping full-stack products for clients across fintech, e-commerce, and SaaS. Specialising in Node.js/Django APIs and React frontends.",
   },
   {
-    year: "2022 – 2024",
-    role: "Software Engineer",
-    company: "Savannah Fintech",
+    year: "Jan – Feb 2025",
+    role: "Full-Stack Developer Intern",
+    company: "Cognifyz",
     description:
-      "Built and maintained the payments API handling $2M+ in monthly transactions. Led migration from monolith to microservices. Reduced API latency by 40%.",
-  },
-  {
-    year: "2020 – 2022",
-    role: "Junior Developer",
-    company: "Andela",
-    description:
-      "Worked on cross-functional teams building React applications for US-based clients. Gained deep experience with Agile delivery and remote collaboration.",
+      "Built and shipped full-stack features as part of a remote internship, working across the React frontend and backend API layers.",
   },
 ];
 
@@ -60,7 +54,7 @@ export default function About (){
           </h1>
           <p className="text-primary-foreground/65 max-w-3xl leading-relaxed text-base md:text-lg">
             Full-stack engineer based in Nairobi, Kenya. I turn complex
-            requirements into clean, maintainable code — and I care just as much
+            requirements into clean, maintainable code; and I care just as much
             about the experience of working with a codebase as I do about the
             end product.
           </p>
@@ -70,12 +64,12 @@ export default function About (){
           <div className="lg:col-span-3 space-y-12">
             <div className="space-y-4 text-primary-foreground/70 leading-relaxed">
               <p>
-                I&apos;m a full-stack engineer with 3+ years of production
-                experience across the JavaScript ecosystem — React on the
-                frontend, Node.js and Express on the backend, MongoDB and
-                PostgreSQL for persistence, and Docker for deployment. I&apos;ve
-                shipped everything from greenfield SaaS platforms to high-stakes
-                payment APIs.
+                I&apos;m a full-stack engineer with 2+ years of production
+                experience across the JavaScript and Python ecosystems; React on the
+                frontend, Node.js/Express and Python (Django, FastAPI) on the backend,
+                MongoDB and PostgreSQL for persistence, and Docker for deployment. I&apos;ve
+                shipped everything from SaaS platforms to high-stakes
+                payment APIs in addition, ive collaborated in solving problems using code.
               </p>
               <p>
                 I care deeply about code quality, maintainability, and shipping
@@ -86,8 +80,7 @@ export default function About (){
               </p>
               <p>
                 Outside of work I contribute to open-source projects, write
-                technical notes on things I wish were documented better, and
-                mentor junior developers in my community.
+                technical notes on things I wish were documented better and workout.
               </p>
             </div>
 
@@ -125,31 +118,31 @@ export default function About (){
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <Link
+              <FillButtonLink
               href="https://github.com/kuria300"
-              target="_blank"
-              rel="noreferrer"
-              className="font-mono text-sm tracking-widest border border-muted-foreground/30 uppercase transition-all hover:border-primary-foreground hover:text-primary-foreground px-6 py-2 flex items-center gap-2"
+              external
+              className="relative z-10 font-mono text-sm tracking-widest uppercase px-6 py-2 flex items-center gap-2 border border-muted-foreground text-muted-foreground transition-colors group-hover:text-white"
             >
               <FaGithub size={14} />
               Kuria300
-            </Link>
+            </FillButtonLink>
 
-            <Link
-              href="malito:eugenekuria66@gmail.com"
-              className="font-mono text-sm tracking-widest border border-muted-foreground/30 uppercase transition-all hover:border-primary-foreground hover:text-primary-foreground px-6 py-2 flex items-center gap-2"
+            <FillButtonLink
+              href="mailto:eugenekuria66@gmail.com"
+              className="relative z-10 font-mono text-sm tracking-widest uppercase px-6 py-2 flex items-center gap-2 border border-muted-foreground text-muted-foreground transition-colors group-hover:text-white"
             >
             <Mail size={14}/>
               Email Me
-            </Link>
+            </FillButtonLink>
 
-            <Link
-              href="malito:eugenekuria66@gmail.com"
-              className="font-mono text-sm tracking-widest border border-muted-foreground/30 uppercase transition-all hover:border-primary-foreground hover:text-primary-foreground px-6 py-2 flex items-center gap-2"
+            <FillButtonLink
+              href="https://drive.google.com/file/d/17iwGRt6YYfmyo-mNWTZ4k2RZuISrZs6k/view?usp=sharing"
+              external
+              className="relative z-10 font-mono text-sm tracking-widest uppercase px-6 py-2 flex items-center gap-2 border border-muted-foreground text-muted-foreground transition-colors group-hover:text-white"
             >
             <Download size={14}/>
               Resume
-            </Link>
+            </FillButtonLink>
             </div>
           </div>
 

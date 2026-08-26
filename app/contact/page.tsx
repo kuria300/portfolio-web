@@ -115,7 +115,7 @@ captchaRef.current?.resetCaptcha();
                         contact
                     </h1>
                     <p className="text-primary-foreground/65 max-w-3xl leading-relaxed text-base md:text-lg">
-                        Whether you're a recruiter with a role, a founder with a project, or just want to talk tech — I'm reachable. I reply to every message.
+                        Whether you're a recruiter with a role, a founder with a project, or just want to talk tech, I'm reachable. I reply to every message.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-16">

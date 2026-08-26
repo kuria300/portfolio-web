@@ -1,3 +1,4 @@
+import FillButtonLink from "@/components/ui/FillButtonLink";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,53 +25,60 @@ export default function Projects() {
 };
 
 
-  const PROJECTS:ProjectsType[]=[ 
-    {
-    title: "DevTrack",
-    tagline: "Issue tracker built for engineering teams",
+ const PROJECTS: ProjectsType[] = [
+  {
+    title: "LegalEase",
+    tagline: "Platform making law accessible in Kenya",
     description:
-      "A full-stack project management tool with real-time updates, role-based access control, and Kanban board views. Handles thousands of concurrent users via WebSocket event broadcasting.",
-    tech: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "Docker"],
+      "A legal-tech platform that helps everyday Kenyans understand and act on legal matters, powered by an OpenAI-driven assistant for plain-language guidance. Supports M-PESA STK Push payments, OTP-verified authentication, and secure document storage via MinIO.",
+    tech: ["React", "Node.js", "Express", "PostgresSQL", "miniO", "Open AI Api", "JWT", "M-PESA Stk Push", "OTP authentication"],
     github: "https://github.com/kuria300",
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=540&fit=crop&auto=format",
-
+      "/justice.avif",
     status: "Production",
   },
   {
-    title: "ShopSphere",
-    tagline: "E-commerce platform with analytics dashboard",
+    title: "KingsLanding AI",
+    tagline: "A local AI agent running locally no api costs",
     description:
-      "End-to-end commerce solution featuring product catalog management, Stripe checkout, and a seller analytics dashboard with revenue charts and inventory forecasting.",
-    tech: ["React", "Express", "PostgreSQL", "Stripe", "Docker", "Redis"],
+      "A fully local RAG-powered AI agent that runs on-device via Ollama, eliminating API costs entirely. Uses pgvector for semantic search, LangChain for orchestration, and custom chunking strategies to deliver accurate, context-aware answers from your own documents.",
+    tech: ["Next.js-PWA", "Fast API", "PostgreSQL", "pgvector", "RAG pipeline", "Ollama", "LangChain", "semantic chunking", "Docker", "Redis"],
     github: "https://github.com/kuria300",
     image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&h=540&fit=crop&auto=format",
-
-    status: "Production" ,
+      "/local.avif",
+    status: "Production",
   },
   {
-    title: "AuthForge",
-    tagline: "Drop-in auth service for microservices",
+    title: "Startup",
+    tagline: "A community platform where users can share ideas and collaborate",
     description:
-      "Lightweight authentication microservice supporting JWT, OAuth2, and passkey flows. Ships as a Docker image with an admin UI and SDK packages for Node, Python, and Go consumers.",
-    tech: ["Node.js", "Express", "MongoDB", "Docker", "OAuth2", "JWT"],
+      "A community-driven platform for sharing ideas, discussing projects, and collaborating with like-minded builders. Content is managed through Sanity CMS, with GitHub OAuth2 for frictionless sign-in and JWT-secured sessions.",
+    tech: ["Next.js", "Sanity CMS", "OAuth2 Github", "JWT"],
     github: "https://github.com/kuria300",
     image:
-      "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=900&h=540&fit=crop&auto=format",
-   
+      "/startup.avif",
     status: "Open Source",
   },
   {
-    title: "LogStream",
-    tagline: "Centralised logging for distributed systems",
+    title: "Creator-Lift",
+    tagline: "Bridges gap between brands and creators",
     description:
-      "Real-time log aggregation service with structured query support, alerting rules, and a dashboard built for ops teams. Ingests from Docker, Kubernetes, and custom agents.",
-    tech: ["Node.js", "Kafka", "Elasticsearch", "React", "Docker", "K8s"],
+      "A marketplace connecting brands with content creators for sponsored collaborations. Features Google OAuth login, secure escrow payments via Pesapal to protect both parties, and media asset storage backed by MinIO Object Storage.",
+    tech: ["React", "Django", "Redis", "PostgresSQL", "Ngimx", "Minio Object storage", "OAuth Google", "JWT", "Escrow Payment Pesapal"],
     github: "https://github.com/kuria300",
     image:
-      "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=900&h=540&fit=crop&auto=format",
-
+      "/creator.avif",
+    status: "In Progress",
+  },
+  {
+    title: "feature: Websocket Messaging system",
+    tagline: "Real-time messaging system using web sockets",
+    description:
+      "A scalable real-time messaging system built on WebSockets, using Kafka and Zookeeper for reliable event streaming across services. Deployed with Docker Compose and Nginx as a reverse proxy, with JWT-authenticated connections.",
+    tech: ["Next.js", "Flask", "Redis", "PostgresSQL", "Ngimx", "Docker", "Docker Compose", "JWT", "Kafka", "Zookeeper", "Nginx"],
+    github: "https://github.com/kuria300",
+    image:
+      "/websocket.avif",
     status: "In Progress",
   },
 ];
@@ -83,20 +91,22 @@ export default function Projects() {
               <p className="font-mono text-xs text-primary-foreground tracking-widest uppercase mb-4">
                 selected work
               </p>
-                <h1 className="font-mono font-bold text-4xl md:text-5xl leading-tight mb-6">
+                <h1 className="font-mono font-bold text-4xl md:text-5xl leading-tight mb-4">
                   Projects
               </h1>
+               <p className="text-primary-foreground/65 max-w-3xl leading-relaxed text-base md:text-lg">
+                Below are some of the projrcts listed:
+              </p>
             </div>
             <div className="flex items-center">
-              <Link
+              <FillButtonLink
               href="https://github.com/kuria300"
-              target="_blank"
-              rel="noreferrer"
-              className="font-mono text-sm tracking-widest border border-muted-foreground/30 uppercase transition-all hover:border-primary-foreground hover:text-primary-foreground px-6 py-2 flex items-center gap-2"
+              external
+              className="relative z-10 font-mono text-sm tracking-widest uppercase px-6 py-2 flex items-center gap-2 border border-muted-foreground text-muted-foreground transition-colors group-hover:text-white"
             >
               <FaGithub size={14} />
               All repos on Github
-            </Link>
+            </FillButtonLink>
             </div>
          </div>
 
