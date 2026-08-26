@@ -109,15 +109,6 @@ This project is authored and owned by **Eugene Kuria Maina**.
 - GitHub: [@kuria300](https://github.com/kuria300)
 - LinkedIn: [Eugene Kuria Maina](https://www.linkedin.com/in/eugene-maina-376177245/)
 
-## Contributing
-
-Contributions, suggestions, and improvements are welcome. To contribute:
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Make your changes and run `yarn lint`.
-4. Open a pull request with a concise description of the update.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE) and is Copyright (c) 2026 Eugene Kuria Maina.
