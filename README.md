@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EKM Portfolio
+
+The EKM portfolio is a dark, terminal-inspired personal website for a full-stack software engineer based in Nairobi, Kenya. It presents selected work, technical experience, service offerings, writing, and a direct contact workflow.
+
+## Features
+
+- Responsive portfolio homepage with animated hero content, testimonials, stats, and calls to action.
+- About page with experience timeline, skills, GitHub profile, email, and resume links.
+- Projects page showcasing project work from GitHub, including technology details and project status.
+- Service pages for API development, SEO, AI integration, MVP development, technical consulting, AI automation, DevOps and containerization, and mobile development.
+- Blog listing with featured writing, tag filtering, progressive loading, and individual post pages.
+- Contact form with client-side validation, hCaptcha protection, server-side validation, Web3Forms delivery, and a success state.
+- Site-wide floating WhatsApp contact button with a pre-filled introductory message and dismissible prompt.
+- SEO metadata, Open Graph and Twitter metadata, JSON-LD structured data, sitemap, robots configuration, and custom 404 handling.
+
+## Tech Stack
+
+- **Framework:** Next.js 16 App Router
+- **Language:** TypeScript with strict type checking
+- **UI:** React 19, Tailwind CSS 4, Lucide React, React Icons
+- **Animation:** Motion
+- **Forms:** React Hook Form, Zod, and `@hookform/resolvers`
+- **Integrations:** hCaptcha, Web3Forms, Axios
+- **Fonts:** DM Sans and JetBrains Mono via `next/font`
+- **Package manager:** Yarn 4
+
+## Project Structure
+
+```text
+app/                  App Router pages, metadata, sitemap, and global styles
+components/           Reusable layout, UI, blog, data, and service components
+public/               Project and service imagery
+utils/                Contact validation and server action
+next.config.ts        Next.js configuration
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 20 or newer
+- Yarn 4, or Corepack enabled
+
+### Install dependencies
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+corepack enable
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Configure environment variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a `.env.local` file in the project root:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+NEXT_PUBLIC_FORM_ACCESS_KEY=your_web3forms_access_key
+```
 
-## Learn More
+`NEXT_PUBLIC_SITE_URL` is used for canonical URLs and structured metadata. `NEXT_PUBLIC_FORM_ACCESS_KEY` is required for contact form delivery through Web3Forms.
 
-To learn more about Next.js, take a look at the following resources:
+The contact page also provides direct email, GitHub, and LinkedIn links. A floating WhatsApp button is available throughout the site for quick enquiries.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Run locally
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+yarn dev
+```
 
-## Deploy on Vercel
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Available Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+yarn dev      # Start the development server with Webpack
+yarn build    # Create a production build
+yarn start    # Serve the production build
+yarn lint     # Run ESLint
+```
+
+## Routes
+
+| Route | Purpose |
+| --- | --- |
+| `/` | Portfolio homepage |
+| `/about` | Experience, skills, and profile information |
+| `/projects` | Selected projects from GitHub |
+| `/services/[slug]` | Service detail pages |
+| `/blog` | Filterable technical writing archive |
+| `/blog/[slug]` | Individual blog posts |
+| `/contact` | Contact form and direct links |
+| `/contact/success` | Successful contact submission state |
+
+## Deployment
+
+The application can be deployed to any platform that supports Next.js. For a typical production deployment:
+
+```bash
+yarn build
+yarn start
+```
+
+Set `NEXT_PUBLIC_SITE_URL` to the public site URL and provide the Web3Forms access key in the deployment environment.
+
+## Author and Owner
+
+This project is authored and owned by **Eugene Kuria Maina**.
+
+- GitHub: [@kuria300](https://github.com/kuria300)
+- LinkedIn: [Eugene Kuria Maina](https://www.linkedin.com/in/eugene-maina-376177245/)
+
+## Contributing
+
+Contributions, suggestions, and improvements are welcome. To contribute:
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Make your changes and run `yarn lint`.
+4. Open a pull request with a concise description of the update.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE) and is Copyright (c) 2026 Eugene Kuria Maina.
