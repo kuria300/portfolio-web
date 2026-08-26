@@ -106,7 +106,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               },
               name: "EKM",
               jobTitle: "Full-stack Engineer",
-              url: "https://yourdomain.com",
+              url: "https://eugenekuria.vercel.app/",
               sameAs: [
                 "https://github.com/kuria300",
                 "https://www.linkedin.com/in/eugene-maina-376177245/",
