@@ -7,6 +7,14 @@ import AnimatedHero from "@/components/ui/AnimatedHero";
 import TypewriterText from "@/components/ui/TypeWriter";
 import FillButtonLink from "@/components/ui/FillButtonLink";
 import Testimonial from "@/components/ui/Testimonial";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description:
+    "Portfolio of Eugene Kuria, a full stack software engineer based in Nairobi, Kenya. Explore projects built with React, Next.js, Node.js, Django and FastAPI, along with skills and experience.",
+};
+
  
 
 export default function Home() {

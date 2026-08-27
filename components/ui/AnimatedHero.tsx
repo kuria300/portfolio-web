@@ -25,7 +25,7 @@ export default function AnimatedHero(){
                 delay: 0.4, // starts after the h1 fade-in finishes
                 }}
 
-                className="inline-block"
+                className="max-sm:mt-2 inline-block"
             >
                 Maina
             </motion.span>

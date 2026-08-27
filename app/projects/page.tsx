@@ -3,6 +3,13 @@ import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Full-stack engineer based in Nairobi, Kenya; Projects listed.",
+};
+
 
 type ProjectStatus = 'Production' | 'Open Source' | 'In Progress'
 

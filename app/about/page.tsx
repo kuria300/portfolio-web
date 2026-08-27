@@ -2,6 +2,12 @@ import FillButtonLink from "@/components/ui/FillButtonLink";
 import { ArrowRight, Download, Mail, TerminalIcon } from "lucide-react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "Full-stack engineer based in Nairobi, Kenya — experience, skills, and tech stack.",
+};
 
 
 const SKILLS = [
