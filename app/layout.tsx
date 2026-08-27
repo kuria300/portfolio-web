@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL as string),
 
   title: {
-    default:"EKM — Software Engineer",
-    template:"%s | EKM"
+    default:"EKM | Software Engineer",
+    template:"%s | EKM",
   },
   description: "EKM is a Full-stack developer specializing in React, Next.js on the frontend and Express, Django and Fast API for the backend. Explore projects, skills, and experience.",
 

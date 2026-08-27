@@ -11,8 +11,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Home",
-  description:
-    "Portfolio of Eugene Kuria, a full stack software engineer based in Nairobi, Kenya. Explore projects built with React, Next.js, Node.js, Django and FastAPI, along with skills and experience.",
+  description:"Portfolio of Eugene Kuria, a full stack software engineer based in Nairobi, Kenya. Explore projects built with React, Next.js, Node.js, Django and FastAPI, along with skills and experience.",
 };
 
  
