@@ -28,7 +28,7 @@ export default function Seo() {
             id: 2,
             icon: <Search size={20}/>,
             title: "Be found at the moment of intent",
-            text: "Your customers are already searching for what you offer. Strong SEO puts you in front of them at exactly the right moment — when they're ready to buy."
+            text: "Your customers are already searching for what you offer. Strong SEO puts you in front of them at exactly the right moment when they're ready to buy."
         },
          {
             id: 3,
@@ -40,7 +40,7 @@ export default function Seo() {
             id: 4,
             icon: <Shield size={20}/>,
             title: "Technical fixes improve performance for everyone",
-            text: "Faster pages and better semantics don't just help rankings — they improve the experience for every visitor, reducing bounce rates and increasing time on site."
+            text: "Faster pages and better semantics don't just help rankings they improve the experience for every visitor, reducing bounce rates and increasing time on site."
         }
     ]
 
@@ -91,7 +91,7 @@ export default function Seo() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div className="lg:col-span-2 space-y-12">
                        <p className="text-primary-foreground/65 text-base md:text-2xl leading-relaxed">
-                         SEO that sticks starts with technical correctness — fast pages, proper semantics, clean crawlability — then layers content and link strategy on top. 
+                         SEO that sticks starts with technical correctness fast pages, proper semantics, clean crawlability then layers content and link strategy on top. 
                          I handle the full technical SEO stack for web apps and content sites, with measurable outcomes.
                        </p>
                        <div>

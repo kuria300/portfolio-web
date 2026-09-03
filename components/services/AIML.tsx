@@ -22,7 +22,7 @@ export default function AIML() {
             id: 1,
             icon: <Star size={20}/>,
             title: "Leap ahead of your competition",
-            text: "AI features that genuinely improve the user experience — intelligent search, smart suggestions, document Q&A — create a differentiation that's hard and slow to copy."
+            text: "AI features that genuinely improve the user experience intelligent search, smart suggestions, document Q&A create a differentiation that's hard and slow to copy."
         },
          {
             id: 2,
@@ -40,7 +40,7 @@ export default function AIML() {
             id: 4,
             icon: <Zap size={20}/>,
             title: "Ship AI without the research overhead,",
-            text: "Integrating AI correctly — with good prompt engineering, caching, and fallbacks — takes experience. You get production-ready features without your team climbing a steep learning curve."
+            text: "Integrating AI correctly with good prompt engineering, caching, and fallbacks takes experience. You get production-ready features without your team climbing a steep learning curve."
         }
     ]
 

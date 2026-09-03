@@ -40,7 +40,7 @@ export default function Devops() {
             id: 4,
             icon: <Shield size={20}/>,
             title: "Technical fixes improve performance for everyone",
-            text: "Faster pages and better semantics don't just help rankings — they improve the experience for every visitor, reducing bounce rates and increasing time on site."
+            text: "Faster pages and better semantics don't just help rankings they improve the experience for every visitor, reducing bounce rates and increasing time on site."
         }
     ]
 
@@ -58,7 +58,7 @@ export default function Devops() {
         {
              list: "03",
             label: "Automate",
-            text: "CI pipeline: test → build → push → deploy on merge."
+            text: "CI pipeline: test -> build -> push -> deploy on merge."
         },
         {
              list: "04",

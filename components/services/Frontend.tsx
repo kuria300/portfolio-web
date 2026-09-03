@@ -28,7 +28,7 @@ export default function AIML() {
             id: 2,
             icon: <DollarSign size={20}/>,
             title: "Dramatically lower operational costs",
-            text: "Automated pipelines scale without headcount. As your volume grows, your cost per transaction goes down — not up."
+            text: "Automated pipelines scale without headcount. As your volume grows, your cost per transaction goes down not up."
         },
          {
             id: 3,

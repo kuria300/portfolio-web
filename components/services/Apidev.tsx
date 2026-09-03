@@ -22,7 +22,7 @@ export default function Apidev() {
             id: 1,
             icon: <Rocket size={20}/>,
             title: "Unlock third-party integrations",
-            text: "A well-designed API turns your product into a platform. Partners, customers, and developers can build on top of you — expanding your reach without extra effort from your team."
+            text: "A well-designed API turns your product into a platform. Partners, customers, and developers can build on top of you expanding your reach without extra effort from your team."
         },
          {
             id: 2,

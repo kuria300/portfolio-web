@@ -140,7 +140,7 @@ export const POSTS: Post[] = [
     slug: "will-ai-take-my-job",
     title: "Will AI Take My Job? The Truth About the Future of Your Work",
     excerpt:
-      "The honest answer isn't 'yes' or 'no' — it's more specific than that. Here's a grounded look at what AI actually changes about how we work, and what doesn't change at all.",
+      "The honest answer isn't 'yes' or 'no' it's more specific than that. Here's a grounded look at what AI actually changes about how we work, and what doesn't change at all.",
     date: "2026-02-02",
     readTime: "8 min",
     tags: ["AI", "Future of Work", "Careers"],
@@ -149,7 +149,7 @@ export const POSTS: Post[] = [
     content: [
       {
         type: "paragraph",
-        text: "It's a question I get asked constantly, in different forms: will AI take my job? Am I wasting my time learning this skill? Should I be worried? The honest answer isn't a clean yes or no — it depends heavily on what your job actually involves, and how you respond to the tools available to you right now.",
+        text: "It's a question I get asked constantly, in different forms: will AI take my job? Am I wasting my time learning this skill? Should I be worried? The honest answer isn't a clean yes or no it depends heavily on what your job actually involves, and how you respond to the tools available to you right now.",
       },
       {
         type: "heading",
@@ -170,10 +170,10 @@ export const POSTS: Post[] = [
       {
         type: "list",
         items: [
-          "Repetitive, well-defined tasks with clear inputs and outputs — data entry, basic formatting, first-draft writing.",
-          "Pattern recognition at scale — sorting, categorising, flagging anomalies in large datasets.",
-          "First-pass research and summarisation — pulling together information that used to take hours manually.",
-          "Routine customer support — answering common questions that don't require real judgment.",
+          "Repetitive, well-defined tasks with clear inputs and outputs ;data entry, basic formatting, first-draft writing.",
+          "Pattern recognition at scale; sorting, categorising, flagging anomalies in large datasets.",
+          "First-pass research and summarisation ;pulling together information that used to take hours manually.",
+          "Routine customer support ; answering common questions that don't require real judgment.",
         ],
       },
       {
@@ -186,8 +186,8 @@ export const POSTS: Post[] = [
           "Judgment calls with incomplete or ambiguous information.",
           "Building trust and relationships with clients, teams, or stakeholders.",
           "Understanding context specific to your company, your customers, or your market.",
-          "Creative direction — knowing what to make, not just how to make it faster.",
-          "Accountability — someone still has to own the decision and its consequences.",
+          "Creative direction; knowing what to make, not just how to make it faster.",
+          "Accountability ;someone still has to own the decision and its consequences.",
         ],
       },
       {
@@ -263,9 +263,9 @@ export const POSTS: Post[] = [
       {
         type: "list",
         items: [
-          "Customer inquiries on WhatsApp or social media that follow predictable patterns — pricing questions, order status, common FAQs.",
+          "Customer inquiries on WhatsApp or social media that follow predictable patterns; pricing questions, order status, common FAQs.",
           "Invoice generation, follow-ups, and payment reminders that currently rely on someone remembering to send them.",
-          "Lead capture and qualification — sorting genuine buyers from browsers before a human spends time on the call.",
+          "Lead capture and qualification ;sorting genuine buyers from browsers before a human spends time on the call.",
           "Inventory and stock alerts that are currently tracked in a spreadsheet someone updates inconsistently.",
           "Appointment or order scheduling that currently happens over back-and-forth phone calls or messages.",
         ],
@@ -336,10 +336,10 @@ export const POSTS: Post[] = [
       {
         type: "list",
         items: [
-          "No live examples of past work — a portfolio full of 'coming soon' links or screenshots instead of real, working sites.",
-          "Prices that feel too good to be true for the scope you're describing — usually means corners get cut somewhere you won't notice until launch.",
+          "No live examples of past work - a portfolio full of 'coming soon' links or screenshots instead of real, working sites.",
+          "Prices that feel too good to be true for the scope you're describing - usually means corners get cut somewhere you won't notice until launch.",
           "Vague answers when you ask what tech stack they'll use, or why.",
-          "No mention of hosting, maintenance, or what happens after launch — as if the relationship ends the day the site goes live.",
+          "No mention of hosting, maintenance, or what happens after launch - as if the relationship ends the day the site goes live.",
           "Heavy use of buzzwords ('AI-powered', 'next-gen') without being able to explain what that actually means for your specific business.",
         ],
       },
@@ -424,7 +424,7 @@ export const POSTS: Post[] = [
     slug: "seo-rank-higher-increase-sales",
     title: "How SEO Can Rank Your Business Higher on Google and Increase Sales",
     excerpt:
-      "Ranking on Google isn't magic — it's a set of specific, unglamorous things done consistently. Here's what actually moves the needle for a small or mid-sized business.",
+      "Ranking on Google isn't magic , it's a set of specific, unglamorous things done consistently. Here's what actually moves the needle for a small or mid-sized business.",
     date: "2026-03-25",
     readTime: "9 min",
     tags: ["SEO", "Business", "Marketing"],
@@ -553,11 +553,11 @@ export const POSTS: Post[] = [
       {
         type: "list",
         items: [
-          "Matches the ad exactly — the same offer, language, and image the person just clicked on, so there's no confusing mismatch.",
-          "Has one clear action — call now, book a slot, fill a form — not five competing links pulling attention away.",
+          "Matches the ad exactly , the same offer, language, and image the person just clicked on, so there's no confusing mismatch.",
+          "Has one clear action , call now, book a slot, fill a form , not five competing links pulling attention away.",
           "Removes navigation menus and distractions that let visitors wander off before converting.",
           "Loads fast on mobile data, since most ad traffic around Nairobi and Kasarani comes through phones on mobile networks.",
-          "Includes trust signals — testimonials, past work, contact details — right where the decision is being made.",
+          "Includes trust signals , testimonials, past work, contact details — right where the decision is being made.",
         ],
       },
       {
@@ -576,9 +576,9 @@ export const POSTS: Post[] = [
         type: "list",
         items: [
           "A headline that mirrors what the ad promised, word for word where possible.",
-          "A short, specific description of the offer — not your whole company history.",
+          "A short, specific description of the offer , not your whole company history.",
           "One obvious call-to-action, repeated at the top and bottom of the page.",
-          "Proof — reviews, before/after examples, or recognisable past clients.",
+          "Proof , reviews, before/after examples, or recognisable past clients.",
           "A fast-loading, mobile-first layout with minimal distractions.",
         ],
       },
@@ -631,11 +631,11 @@ export const POSTS: Post[] = [
       {
         type: "list",
         items: [
-          "Instant payment confirmation — no more manually checking messages and matching screenshots to orders.",
+          "Instant payment confirmation , no more manually checking messages and matching screenshots to orders.",
           "Automatic order or booking updates the moment payment clears, without anyone needing to check.",
           "A proper payment record and history you can search, export, and reconcile with your accounts.",
           "A faster, more trustworthy checkout experience that matches what customers already expect.",
-          "Support for STK Push — the customer just gets a prompt on their phone to enter their PIN, no typing a till number manually.",
+          "Support for STK Push , the customer just gets a prompt on their phone to enter their PIN, no typing a till number manually.",
         ],
       },
       {
@@ -932,7 +932,7 @@ const refreshToken = jwt.sign(
       },
       {
         type: "heading",
-        text: "OAuth2 — for delegation, not just login",
+        text: "OAuth2, for delegation, not just login",
       },
       {
         type: "paragraph",
@@ -947,7 +947,7 @@ const refreshToken = jwt.sign(
         items: [
           "Server-rendered web app with a traditional backend: sessions.",
           "SPA or mobile app with your own API: JWT with short expiry + refresh tokens.",
-          "Microservices architecture: JWT — services can verify tokens independently.",
+          "Microservices architecture: JWT , services can verify tokens independently.",
           "Third-party login (Google, GitHub): OAuth2 + OpenID Connect.",
           "Public API for developer integrations: OAuth2 client credentials or API keys.",
           "Need instant revocation: sessions, or JWT with a blacklist (accepts the statefulness tradeoff).",
@@ -972,7 +972,7 @@ const refreshToken = jwt.sign(
     slug: "react-performance-patterns",
     title: "React performance patterns I actually use in production",
     excerpt:
-      "Not a theoretical overview — these are the patterns I reach for when profiling real apps. Covers memo, useMemo, code splitting, and a few less-obvious wins around context and state shape.",
+      "Not a theoretical overview, these are the patterns I reach for when profiling real apps. Covers memo, useMemo, code splitting, and a few less-obvious wins around context and state shape.",
     date: "2024-10-04",
     readTime: "9 min",
     tags: ["React", "Performance", "TypeScript"],
@@ -1070,7 +1070,7 @@ function App() {
       {
         type: "list",
         items: [
-          "Profile first — don't guess at what's slow.",
+          "Profile first , don't guess at what's slow.",
           "memo only helps with stable prop references.",
           "useMemo is worth it for genuinely expensive computations only.",
           "Split contexts by update frequency.",
@@ -1093,7 +1093,7 @@ function App() {
     slug: "microservices-node-docker",
     title: "Microservices with Node.js and Docker: a practical guide",
     excerpt:
-      "Breaking a monolith is easy. Breaking it well is hard. I walk through the decisions we made migrating a 80k-line Express app to microservices — what worked, what didn't, and what I'd do differently.",
+      "Breaking a monolith is easy. Breaking it well is hard. I walk through the decisions we made migrating a 80k-line Express app to microservices , what worked, what didn't, and what I'd do differently.",
     date: "2024-11-18",
     readTime: "12 min",
     tags: ["Node.js", "Docker", "Architecture"],
@@ -1202,7 +1202,7 @@ CMD ["node", "dist/index.js"]`,
     slug: "mongodb-schema-design",
     title: "MongoDB schema design: when to embed and when to reference",
     excerpt:
-      "The most common mistake I see with MongoDB is treating it like a relational database — or the opposite, embedding everything. Here's the mental model I use to make that call.",
+      "The most common mistake I see with MongoDB is treating it like a relational database or the opposite, embedding everything. Here's the mental model I use to make that call.",
     date: "2024-08-21",
     readTime: "7 min",
     tags: ["MongoDB", "Database", "Architecture"],
@@ -1308,7 +1308,7 @@ CMD ["node", "dist/index.js"]`,
     slug: "ci-cd-github-actions",
     title: "CI/CD for Node.js apps with GitHub Actions",
     excerpt:
-      "A step-by-step walkthrough of the pipeline setup I use across most of my projects — test, lint, build, Docker push, and zero-downtime deploy to a VPS.",
+      "A step-by-step walkthrough of the pipeline setup I use across most of my projects test, lint, build, Docker push, and zero-downtime deploy to a VPS.",
     date: "2024-05-30",
     readTime: "8 min",
     tags: ["DevOps", "Docker", "CI/CD"],
@@ -1416,7 +1416,7 @@ jobs:
       {
         type: "list",
         items: [
-          "Store all secrets in GitHub Actions repository secrets — never in the workflow file.",
+          "Store all secrets in GitHub Actions repository secrets never in the workflow file.",
           "Use a dedicated deploy SSH key (no passphrase) with restricted permissions on the VPS.",
           "Environment variables on the VPS live in /etc/app/.env, readable only by the deploy user.",
           "Rotate the registry token and SSH key on a schedule, or on any team member departure.",

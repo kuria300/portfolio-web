@@ -34,7 +34,7 @@ export default function Mvp() {
             id: 3,
             icon: <BarChart3Icon size={20}/>,
             title: "Investor-ready from day one",
-            text: "A live, working product is your most compelling pitch asset. Demonstrating traction — even early — dramatically improves your fundraising position."
+            text: "A live, working product is your most compelling pitch asset. Demonstrating traction even early dramatically improves your fundraising position."
         },
          {
             id: 4,
@@ -92,7 +92,7 @@ export default function Mvp() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div className="lg:col-span-2 space-y-12">
                        <p className="text-primary-foreground/65 text-base md:text-2xl leading-relaxed">
-                         I help founders and product teams go from a concept to a working, deployable product in weeks — not months. 
+                         I help founders and product teams go from a concept to a working, deployable product in weeks not months. 
                          The focus is on shipping the right thing fast, validating assumptions early, and building a codebase that can scale once you've found product-market fit.
                        </p>
                        <div>

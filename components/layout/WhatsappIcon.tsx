@@ -17,7 +17,7 @@ export default function WhatsappIcon() {
         <button
           onClick={() => setVisible(false)}
           aria-label="Dismiss"
-          className="absolute -top-2 -right-3 rounded-full bg-gray-200 p-1 text-gray-600 hover:bg-gray-300">
+          className="absolute -top-4 -right-1 rounded-full bg-gray-200 p-1 text-gray-600 hover:bg-gray-300">
             
           <X className="size-3" />
         </button>

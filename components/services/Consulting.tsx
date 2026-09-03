@@ -28,7 +28,7 @@ export default function Consulting() {
             id: 2,
             icon: <Shield size={20}/>,
             title: "Avoid expensive architectural mistakes",
-            text: "The wrong tech choices compound — they slow hiring, constrain features, and eventually require painful rewrites. Getting the architecture right early pays dividends for years."
+            text: "The wrong tech choices compound they slow hiring, constrain features, and eventually require painful rewrites. Getting the architecture right early pays dividends for years."
         },
          {
             id: 3,
