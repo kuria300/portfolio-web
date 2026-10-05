@@ -37,7 +37,7 @@ export default function About (){
   },
   {
     year: "Jan – Feb 2025",
-    role: "Full-Stack Developer Intern",
+    role: "Full-Stack Developer contract",
     company: "Cognifyz",
     description:
       "Built and shipped full-stack features as part of a remote internship, working across the React frontend and backend API layers.",
