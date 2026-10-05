@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 
 const SKILLS = [
   { label: "React", cat: "frontend" },
+  { label: "Next.js", cat: "frontend" },
   { label: "TypeScript", cat: "frontend" },
   { label: "Node.js", cat: "backend" },
   { label: "Express", cat: "backend" },
@@ -20,7 +21,7 @@ const SKILLS = [
   { label: "Django", cat: "backend" },
   { label: "MongoDB", cat: "database" },
   { label: "SQL / PostgreSQL", cat: "database" },
-  { label: "Docker", cat: "devops" },
+  { label: "Docker & Docker Compose", cat: "devops" },
   { label: "REST APIs", cat: "backend" },
   { label: "Git & CI/CD", cat: "devops" },
   { label: "Redis", cat: "database" },
@@ -70,7 +71,7 @@ export default function About (){
           <div className="lg:col-span-3 space-y-12">
             <div className="space-y-4 text-primary-foreground/70 leading-relaxed">
               <p>
-                I&apos;m a full-stack engineer with 2+ years of production
+                I&apos;m a full-stack engineer with 3+ years of production
                 experience across the JavaScript and Python ecosystems; React on the
                 frontend, Node.js/Express and Python (Django, FastAPI) on the backend,
                 MongoDB and PostgreSQL for persistence, and Docker for deployment. I&apos;ve
@@ -157,21 +158,22 @@ export default function About (){
                 Tech Stack
             </p>
 
-            <div className="space-y-2.5">
-                {SKILLS.map((s)=>(
-                  <div key={s.label} className="flex items-center gap-3 border border-muted-foreground/30 px-4 py-3 group hover:border-primary-foreground transition-all">
-                     <span className="w-1.5 h-1.5 rounded-full bg-primary-foreground opacity-60 group-hover:opacity-100 transition-opacity shrink-0" />
-                  <span className="font-mono text-sm text-primary-foreground/80 group-hover:text-primary-foreground transition-colors">
-                    {s.label}
-                  </span>
-                  <span className="ml-auto font-mono text-[10px] text-muted-foreground tracking-widest uppercase shrink-0">
-                    {s.cat}
-                  </span>
-
-                  </div>
-                ))}
-
-            </div>
+           <div className="max-h-80 space-y-2.5 overflow-y-auto pr-2 scroll-smooth [scrollbar-width:thin] [scrollbar-color:theme(colors.muted.foreground/40)_transparent]">
+            {SKILLS.map((s) => (
+              <div
+                key={s.label}
+                className="group flex items-center gap-3 border border-muted-foreground/30 px-4 py-3 transition-all hover:border-primary-foreground"
+              >
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary-foreground opacity-60 transition-opacity group-hover:opacity-100" />
+                <span className="font-mono text-sm text-primary-foreground/80 transition-colors group-hover:text-primary-foreground">
+                  {s.label}
+                </span>
+                <span className="ml-auto shrink-0 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                  {s.cat}
+                </span>
+              </div>
+            ))}
+          </div>
 
             {/* <div className="mt-8 border border-border p-5">
               <p className="font-mono text-xs text-muted-foreground tracking-widest uppercase mb-3">

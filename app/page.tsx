@@ -8,6 +8,7 @@ import TypewriterText from "@/components/ui/TypeWriter";
 import FillButtonLink from "@/components/ui/FillButtonLink";
 import Testimonial from "@/components/ui/Testimonial";
 import type { Metadata } from "next";
+import { CountUp } from "@/utils/helpers/Countup";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -52,11 +53,12 @@ export default function Home() {
   },
 ];
   const STATS = [
-  { value: "2+", label: "Years experience" },
-  { value: "5+", label: "Projects shipped" },
-  { value: "10", label: "Technologies mastered" },
+  { value: "3+", label: "Years experience" },
+  { value: "6+", label: "Projects shipped" },
+  { value: "11", label: "Technologies mastered" },
   { value: "100%", label: "Client satisfaction" },
 ];
+
   return (
      <main className="flex-1">
       <section className="relative min-h-screen flex flex-col justify-center overflow-hidden px-6">
@@ -141,7 +143,7 @@ export default function Home() {
             {STATS.map((s) => (
               <div key={s.label} className="bg-white px-6 py-5">
                 <p className="font-mono font-bold text-2xl md:text-3xl text-primary-foreground mb-1">
-                  {s.value}
+                 <CountUp value={s.value} />
                 </p>
                 <p className="font-mono text-[10px] text-muted-foreground tracking-widest uppercase">
                   {s.label}

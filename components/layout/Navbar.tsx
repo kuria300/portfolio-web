@@ -40,6 +40,7 @@ const navItems:NavItems[] = [
 
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
   const [servicesDrop, setServicesDrop] = useState<boolean>(false)
+  const [scrolled, setScrolled]=useState(false)
 
   // closes the DESKTOP flyout when you click anywhere outside it
   const dropdownRef = useRef<HTMLDivElement>(null)
@@ -59,9 +60,30 @@ const navItems:NavItems[] = [
     return () => document.removeEventListener("mousedown", handleClickOutside)
   }, [])
 
+  useEffect(()=>{
+    const scrollDown = (): void => setScrolled(window.scrollY > 20)
+
+
+   window.addEventListener('scroll', scrollDown)
+   return ()=> window.removeEventListener('scroll', scrollDown)
+  }, [])
+
     return (
-        <header className="fixed top-0 border-b border-border z-50 inset-x-0 backdrop-blur-md duration-300 transition-all bg-dark-night/70">
-            <nav className="max-w-6xl mx-auto flex items-center justify-between h-20 px-6">
+        <header className="fixed inset-x-0 top-0 z-50">
+             <div className="w-full bg-primary-foreground px-4 py-1.5 text-center font-mono text-[11px] font-medium uppercase tracking-widest text-white">
+                Creator-Lift <span className="opacity-60">.</span> coming soon
+            </div>
+            <nav
+                className={`mx-auto w-full backdrop-blur-md transition-all duration-300 ease-in-out border-b border-border bg-dark-night/70 rounded-none mt-0 max-w-full
+                ${
+                    scrolled
+                    ? "md:mt-4 md:max-w-4xl md:rounded-xl md:border md:shadow-lg"
+                    : "md:max-w-full md:border-0 md:border-b"
+                }`}
+            >
+                <div className={`mx-auto flex items-center justify-between px-4 py-3 max-sm:py-6 transition-all duration-300 md:px-6 max-sm:px-8
+                    ${scrolled ? "md:max-w-4xl" : "md:max-w-6xl"}`}
+                >
                <Link href='/' className="font-mono font-semibold tracking-widest text-primary-foreground uppercase">
                  <span className="text-muted-foreground mr-1"> &gt; </span>  
                   EKM
@@ -145,7 +167,7 @@ const navItems:NavItems[] = [
                 >
                 {menuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
-
+             </div>
             </nav>
  
              {menuOpen && (
@@ -167,7 +189,7 @@ const navItems:NavItems[] = [
                         }}
                         className={`transition-colors text-muted-foreground  ${
                             isActive 
-                            ? "text-primary-foreground/60 font-medium" 
+                            ? "text-primary/60 font-medium" 
                             : "text-muted-foreground hover:text-primary"
                         }`}
                     >
@@ -215,7 +237,7 @@ const navItems:NavItems[] = [
                         href={path}
                          className={`px-4 py-2 rounded-md transition-colors text-muted-foreground  ${
                             isActive 
-                            ? "text-primary-foreground font-medium" 
+                            ? "text-primary/15 font-medium" 
                             : "text-muted-foreground hover:text-primary"
                         }`}
                         >
