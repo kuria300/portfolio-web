@@ -1,6 +1,7 @@
 import BlogPostDetail from "@/components/blog/BlogPostDetail";
 import { POSTS } from "@/components/data/POSTS";
 import { notFound } from "next/navigation";
+import { createPageMetadata } from "@/utils/seo";
 
 type Props = {
   params: Promise<{ slug: string[] }>;
@@ -20,13 +21,14 @@ export async function generateMetadata({ params }: Props) {
   const post = POSTS.find((p) => p.slug === slugPath);
 
   if (!post) {
-    return { title: "Post not found" };
+    return { title: "Post not found", robots: { index: false, follow: false } };
   }
 
-  return {
+  return createPageMetadata({
     title: post.title,
     description: post.excerpt,
-  };
+    path: `/blog/${post.slug}`,
+  });
 }
 
 export default async function BlogPostPage({ params }: Props) {

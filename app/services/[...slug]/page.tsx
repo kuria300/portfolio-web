@@ -7,7 +7,8 @@ import Mobile from "@/components/services/Mobile";
 import Mvp from "@/components/services/Mvp";
 import Seo from "@/components/services/Seo";
 import { detailServices, ServiceItem } from "@/components/data/infer";
-import { Metadata } from "next";
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/utils/seo";
 import { notFound } from "next/navigation";
 
 
@@ -24,21 +25,13 @@ export async function generateMetadata({params}: { params: Promise<{ slug:string
 
      const service = detailServices.find((s: ServiceItem)=> s.slug === slugPath)
 
-     if (!service) return {};
+     if (!service) return { robots: { index: false, follow: false } };
 
-     return {
+     return createPageMetadata({
         title: service.name,
         description: service.description,
-        alternates:{
-            canonical: `services/${slugPath}`
-        },
-
-        openGraph:{
-            title: service.name,
-            description: service.description,
-            url: `/services/${slugPath}`,
-        }
-     }
+        path: `/services/${slugPath}`,
+     });
 }
 
 

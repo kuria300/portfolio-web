@@ -2,12 +2,13 @@ import FillButtonLink from "@/components/ui/FillButtonLink";
 import { ArrowRight, Download, Mail, TerminalIcon } from "lucide-react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/utils/seo";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "About",
-  description: "Full-stack engineer based in Nairobi, Kenya — experience, skills, and tech stack.",
-};
+  description: "Learn about Eugene Kuria, a full-stack software engineer based in Nairobi, Kenya, including his experience, skills, and technology stack.",
+  path: "/about",
+});
 
 
 const SKILLS = [

@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Toaster } from "sonner";
 import WhatsappIcon from "@/components/layout/WhatsappIcon";
+import { SITE_URL } from "@/utils/site";
 
 const Sans = DM_Sans({
   variable: "--font-sans",
@@ -17,13 +18,13 @@ const Mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL as string),
+  metadataBase: new URL(SITE_URL),
 
   title: {
-    default:"EKM | Software Engineer",
-    template:"%s | EKM",
+    default: "Eugene Kuria | Full-Stack Software Engineer",
+    template: "%s | Eugene Kuria",
   },
-  description: "EKM is a Full-stack developer specializing in React, Next.js on the frontend and Express, Django and Fast API for the backend. Explore projects, skills, and experience.",
+  description: "Eugene Kuria is a full-stack software engineer in Nairobi, Kenya, building web applications with React, Next.js, Node.js, Django, and FastAPI.",
 
   keywords: [
     "EKM",
@@ -46,26 +47,26 @@ export const metadata: Metadata = {
   // setup how it will appear when shared
   openGraph:{
     type:"website",
-    url:"/",
-    title:"EKM — Software Engineer",
-    siteName:"EKM portfolio",
-    description:"Explore projects, skills and experiences of EKM a full-stack engineer based in Nairobi, kasarani",
+    url: SITE_URL,
+    title: "Eugene Kuria | Full-Stack Software Engineer",
+    siteName: "Eugene Kuria Portfolio",
+    description: "Explore projects, skills, and experience from Eugene Kuria, a full-stack software engineer based in Nairobi, Kenya.",
     locale:"en_US",
 
     images:[
       {
-       url:"/",
-       width:1200,
-       height:630,
-       alt:"EKM portfolio hero image"
+       url: "/opengraph-image.png",
+       width: 1200,
+       height: 630,
+       alt: "Eugene Kuria portfolio"
     }
    ]
   },
   twitter: {
   card: "summary_large_image",
-  title: "EKM — Software Engineer Portfolio",
-  description: "Explore projects, skills, and experience of EKM, a frontend developer.",
-  // images: ["/og-image.jpg"],
+  title: "Eugene Kuria | Full-Stack Software Engineer",
+  description: "Explore projects, skills, and experience from Eugene Kuria, a full-stack software engineer in Nairobi, Kenya.",
+  images: ["/opengraph-image.png"],
 },
 
 robots:{
@@ -82,10 +83,6 @@ robots:{
 //   icon:"/favicon.ico",
 //   apple:"/apple-icon.png"
 // },
-
-alternates:{
-  canonical:"/"
-}
 
 };
 

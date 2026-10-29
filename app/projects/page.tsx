@@ -3,12 +3,13 @@ import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/utils/seo";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Projects",
-  description: "Full-stack engineer based in Nairobi, Kenya; Projects listed.",
-};
+  description: "Explore software projects by Eugene Kuria, including web applications, APIs, AI tools, and open-source work built with modern technologies.",
+  path: "/projects",
+});
 
 
 type ProjectStatus = 'Production' | 'Open Source' | 'In Progress'
